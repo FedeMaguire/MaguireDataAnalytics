@@ -4,14 +4,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Federico Maguire Portfolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
 	</head>
 	<body class="is-preload">
 
@@ -22,17 +21,11 @@
 					<div id="intro">
 						<h1>Federico Maguire<br />
 						Portfolio</h1>
-						<p style="text-align: justified;">
-							Data Analyst experienced in SQL, Excel, Python, Tableau, and Power BI, 
-							with a strong foundation built through intensive training, specialized courses, 
-							certifications, and hands-on freelance projects. Proficient in data analysis, 
-							predictive modeling, machine learning techniques, and algorithmic trading. 
-							Passionate about turning complex data into actionable insights and developing intelligent, 
-							data-driven solutions.<br>
-						</p>
-						<p style="text-align: center; font-style: italic;">
-							"Motivated to apply this expertise in a role that offers 
-							continuous opportunities for personal and professional growth."
+						<p style="text-align: center;">
+							AI trainer (RLHF) and data analyst. At Scale AI, I evaluated and stress-tested
+							LLM responses to Python and SQL coding tasks across 10+ projects, including reviewer roles.
+							I work with Python, SQL, Excel, Tableau, and Power BI, and I'm currently building FlowLayerPRO,
+							a real-time order flow analytics desktop app. Before data, I spent 13 years in CNC and CAD/CAM design.
 						</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -43,66 +36,67 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Data Projects</a></li>
-							<li><a href="generic.html">Resume / Courses & Certifications</a></li>
+							<li><a href="generic.html">Resume / Courses &amp; Certifications</a></li>
 							<li><a href="elements.html">CNC CAD/CAM Design</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="mailto:MaguireDataAnalytics@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://www.linkedin.com/in/Federico-Maguire/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://www.linkedin.com/in/Federico-Maguire/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/FedeMaguire" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							
+						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
+						<!-- Featured Post: FlowLayerPRO -->
 							<article class="post featured">
 								<header>
-									<h2>BINANCE Trading Bot with WEB APP Live Dashboard</a></h2>
-									<h3>This is a real-time Binance Trading Bot developed in Python.</a></h3>
-									<p>It streams its performance 
-									live to a Flask-based web app, providing real-time updates on trading activity, 
-									performance metrics, trading cycle charts, and overall system status.<br />
-									</p>
+									<h2>FlowLayerPRO</h2>
+									<h3>Real-time order flow analytics desktop app for crypto futures traders</h3>
+									<p>A Windows desktop app that streams live trades and order-book depth from Binance, Bybit, and OKX,
+									showing liquidity walls, large trades, icebergs, and delta at a 300 ms refresh rate.
+									Built with a Python engine, a Tauri shell, and Plotly.js WebGL charts, developed with an AI coding
+									assistant under strict review: every change was verified with logs or live-market stress tests
+									(up to 4 h 41 min across three exchanges with zero slow cycles).
+									It grew out of my earlier Binance trading bot with a Flask live dashboard.</p>
 								</header>
-								
-								<a class="image main"><img src="images/full.jpg" alt="" /></a>
+
+								<!-- TODO: add screenshot as images/flowlayerpro.jpg -->
+								<a class="image main"><img src="images/flowlayerpro.jpg" alt="FlowLayerPRO order flow dashboard" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/FedeMaguire/TradingBot-Web-App" class="button large">View Project</a></li>
+									<!-- TODO: add a demo video or docs link here when available -->
+									<li><a href="https://github.com/FedeMaguire/TradingBot-Web-App" class="button large">Early Version (Binance Bot)</a></li>
 								</ul>
 							</article>
 
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header>
-									<h2>2023 data JOB POSTINGS ANALYSIS WORLD MAP</a></h2>
-									<h3>Interactive Tableau Dashboard</a></h3>
-									<p>By engaging with the dashboard, you can explore the nuances of the 2023 data field job market. 
-										Dive into specific countries, filter postings by remote or on-site, and uncover insights on top platforms, 
-										in-demand skills, posting by location and job title, and salary trends.<br />
-									</p>
+									<h2>2023 Data Job Postings Analysis World Map</h2>
+									<h3>Interactive Tableau Dashboard</h3>
+									<p>Explore the 2023 data job market by country, filter postings by remote or on-site,
+										and see the top job platforms, in-demand skills, postings by location and job title, and salary trends.</p>
 								</header>
-								
-								<a class="image main"><img src="images/mapdashboatrd.jpg" alt="" /></a>
+
+								<a class="image main"><img src="images/mapdashboatrd.jpg" alt="Tableau world map of data job salaries" /></a>
 								<ul class="actions special">
 									<li><a href="https://github.com/FedeMaguire/Luke-Barousse-SQL-Course" class="button large">View Project</a></li>
-									<li><a href="https://public.tableau.com/views/2023DatasalariesAnalysis/SalaryaverageMap?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="button large">View Dashboard</a></li>
+									<li><a href="https://public.tableau.com/views/2023DatasalariesAnalysis/SalaryaverageMap?:language=en-US&amp;:sid=&amp;:display_count=n&amp;:origin=viz_share_link" class="button large">View Dashboard</a></li>
 								</ul>
 							</article>
 
 						<!-- Featured Post -->
 						<article class="post featured">
 							<header>
-								<h2>London Bike Rides interactive Tableau Dashboard</a></h2>
-								<h3>Python EDA and Linear Regression model</a></h3>
-								<p>Exploratory Data Analysis was performed to build an interactive Tableau Dashboard and a Linear Regression machine learning model.<br />
-								</p>
+								<h2>London Bike Rides Interactive Tableau Dashboard</h2>
+								<h3>Python EDA and Linear Regression Model</h3>
+								<p>Exploratory data analysis in Python, used to build an interactive Tableau dashboard and a linear regression model.</p>
 							</header>
-							<a class="image main"><img src="images/dashboardbike2.jpg" alt="" /></a>
+							<a class="image main"><img src="images/dashboardbike2.jpg" alt="London bike rides Tableau dashboard" /></a>
 							<ul class="actions special">
 								<li><a href="https://github.com/FedeMaguire/London-Bikes-Sharing-EDA-Tableau-Regression-Model" class="button large">View Project</a></li>
-								<li><a href="https://public.tableau.com/views/LondonBikeRidesInteractiveDashboard_17006937338830/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="button large">View Dashboard</a></li>
+								<li><a href="https://public.tableau.com/views/LondonBikeRidesInteractiveDashboard_17006937338830/Dashboard1?:language=en-US&amp;:sid=&amp;:display_count=n&amp;:origin=viz_share_link" class="button large">View Dashboard</a></li>
 							</ul>
 						</article>
 
@@ -110,120 +104,124 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2>SQL and Power BI dashboard: </a></h2>
-										<h3>Human Resources dataset</a></h3>
+										<h2>SQL and Power BI Dashboard</h2>
+										<h3>Human Resources dataset</h3>
 									</header>
-									<a class="image fit"><img src="images/hrdashboard.png" alt="" /></a>
-									<p>A Human Resources dataset was cleaned and queried using SQL in PostgreSQL, and the insights were visualized using Power BI to gain a visual understanding of employees' behavior over the years.</p>
+									<a class="image fit"><img src="images/hrdashboard.png" alt="Power BI human resources dashboard" /></a>
+									<p>A human resources dataset was cleaned and queried with SQL in PostgreSQL, and the insights were visualized in Power BI to show how employee behavior changed over the years.</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/FedeMaguire/HR-Dashboard-PostgreSQL-PowerBI" class="button">View Projects</a></li>
+										<li><a href="https://github.com/FedeMaguire/HR-Dashboard-PostgreSQL-PowerBI" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2>Python Linear Regression Analysis:</a></h2>
-										<h3>Radio Marketing campaign dataset</a></h3>
+										<h2>Python Linear Regression Analysis</h2>
+										<h3>Radio Marketing campaign dataset</h3>
 									</header>
-									<a class="image fit"><img src="images/radiosales.jpg" alt="" /></a>
-									<p>Performing a simple linear regression analysis, which includes creating and fitting a model, checking model assumptions, analyzing model performance, interpreting model coefficients, and communicating results to stakeholders.</p>
+									<a class="image fit"><img src="images/radiosales.jpg" alt="Linear regression of radio marketing and sales" /></a>
+									<p>A simple linear regression analysis: building and fitting the model, checking model assumptions, evaluating performance, interpreting coefficients, and communicating results to stakeholders.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/FedeMaguire/SALES-OLS-linear-regression-MODEL-Python" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2>EDA with Python:</a></h2>
-										<h3>Roller Coaster dataset</a></h3>
+										<h2>EDA with Python</h2>
+										<h3>Roller Coaster dataset</h3>
 									</header>
-									<a class="image fit"><img src="images/rollercoaster.jpg" alt="" /></a>
-									<p>Exploratory Data Analysis (EDA) with Python on a roller coaster dataset. This exploration offers valuable insights into the thrilling world of roller coasters.</p>
+									<a class="image fit"><img src="images/rollercoaster.jpg" alt="Roller coaster dataset charts" /></a>
+									<p>Exploratory data analysis (EDA) with Python on a roller coaster dataset.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/FedeMaguire/EDA-Roller-Coaster-Python" class="button">View Project</a></li>
 									</ul>
 								</article>
-								
+
 								<article>
 									<header>
-										<h2>Excel Analysis and Interactive Dashboard:</a></h2>
-										<h3>Coffee Sales dataset</a></h3>
+										<h2>Excel Analysis and Interactive Dashboard</h2>
+										<h3>Coffee Sales dataset</h3>
 									</header>
-									<a class="image fit"><img src="images/coffeesales.jpg" alt="" /></a>
-									<p>This Excel project, specifically focused on coffee sales data, shows data acquisition, cleaning, and transformation using advanced Excel functions. The raw data is transformed into a structured, analyzable format to build and interactive Dashboard.</p>
+									<a class="image fit"><img src="images/coffeesales.jpg" alt="Excel coffee sales dashboard" /></a>
+									<p>An Excel project on coffee sales data covering data acquisition, cleaning, and transformation with advanced Excel functions. The raw data is turned into a structured format to build an interactive dashboard.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/FedeMaguire/Coffee_Sales-Interactive_Dashboard-Excel" class="button">View Project</a></li>
 									</ul>
 								</article>
-								
+
 								<article>
 									<header>
-										<h2>Tableau Public</a></h2>
-										<h3>Dashboard Projects</a></h3>
+										<h2>Tableau Public</h2>
+										<h3>Dashboard Projects</h3>
 									</header>
-									<a class="image fit"><img src="images/tableaudashboards.jpg" alt="" /></a>
-									<p>An overview of Dashboards created in Tableau Public from various data sources.</p>
+									<a class="image fit"><img src="images/tableaudashboards.jpg" alt="Tableau Public dashboards" /></a>
+									<p>An overview of dashboards created in Tableau Public from various data sources.</p>
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/app/profile/federico.maguire/vizzes" class="button">View Projects</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2>Python Trading Bot:</a></h2>
-										<h3>Trading Bot with Graphical User Interface.</a></h3>
+										<h2>Python Trading Bot</h2>
+										<h3>Trading Bot with Graphical User Interface</h3>
 									</header>
-									<a class="image fit"><img src="images/tradingbot.jpg" alt="" /></a>
-									<p>Python Trading Bot with GUI, leveraging Binance's API for scheduled real-time data gathering and the TA library for technical indicators calculations.</p>
+									<a class="image fit"><img src="images/tradingbot.jpg" alt="Python trading bot GUI" /></a>
+									<p>A Python trading bot with a GUI, using Binance's API for scheduled real-time data collection and the TA library for technical indicator calculations.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/FedeMaguire/Python-Trading-Bot" class="button">View Project</a></li>
 									</ul>
-									
 								</article>
 								<article>
 									<header>
-										<h2>WhatsApp Chatbot:</a></h2>
-										<h3>ChatGPT's API Integration and Database storage</a></h3>
+										<h2>WhatsApp Chatbot</h2>
+										<h3>ChatGPT API Integration and Database Storage</h3>
 									</header>
-									<a class="image fit"><img src="images/chatbot.jpg" alt="" /></a>
-									<p>A specialized WhatsApp Chatbot using ChatGPT's API 'system' instructions, crafted for a specific business. Additionally, it possesses the ability to securely store data in a database for future data analysis.</p>
+									<a class="image fit"><img src="images/chatbot.jpg" alt="WhatsApp chatbot conversation" /></a>
+									<p>A WhatsApp chatbot built for a specific business, using ChatGPT API system instructions. It also stores conversation data securely in a database for later analysis.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/FedeMaguire/Whatsapp-ChatGPT-Chatbot" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2>Python- Pygame - OOP:</a></h2>
-										<h3>Diamond Invasion arcade-style game</a></h3>
+										<h2>Python, Pygame, OOP</h2>
+										<h3>Diamond Invasion arcade-style game</h3>
 									</header>
-									<a class="image fit"><img src="images/gameplay capture.gif" alt="" /></a>
-									<p>Diamond Invasion is a classic arcade-style game, inspired by the iconic Galaga, built using Python 3 and powered by the Pygame library. This project uses Object-oriented programming approach.</p>
+									<a class="image fit"><img src="images/gameplay capture.gif" alt="Diamond Invasion gameplay" /></a>
+									<p>Diamond Invasion is a classic arcade-style game inspired by Galaga, built with Python 3 and the Pygame library using an object-oriented approach.</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/FedeMaguire/Diamond_Invasion-Game-" class="button">View Projects</a></li>
+										<li><a href="https://github.com/FedeMaguire/Diamond_Invasion-Game-" class="button">View Project</a></li>
 									</ul>
 								</article>
 							</section>
 
+						<hr />
+
+						<!-- Contact -->
 						<section class="split contact">
 							<section class="alt">
 								<h3>Location</h3>
-								<p>Buenos Aires, Argentina</a></p>
-								
+								<p>Buenos Aires, Argentina</p>
 							</section>
 							<section>
 								<h3>Email</h3>
 								<ul class="icons alt">
-									<li><a href="Mailto:MaguireDataAnalytics@gmail.com"><span class="label">MaguireDataAnalytics@gmail.com</span></a></li>
+									<li><a href="mailto:MaguireDataAnalytics@gmail.com"><span class="label">MaguireDataAnalytics@gmail.com</span></a></li>
+								</ul>
 							</section>
 							<section>
 								<h3>Social</h3>
-							<ul class="icons alt">
-								<li><a href="https://www.linkedin.com/in/Federico-Maguire" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-								<li><a href="https://github.com/FedeMaguire" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/Federico-Maguire/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/FedeMaguire" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
 							</section>
 						</section>
 
+					</div>
+
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Federico Maguire</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
