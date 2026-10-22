@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>FlowLayerPRO Case Study | Federico Maguire Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Case study: FlowLayerPRO, a real-time order flow analytics desktop app built with an AI coding assistant under evidence-based review." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.fl-figure { margin: 0 0 2em 0; }
+			.fl-figure figcaption { font-size: 0.8em; color: #888; margin-top: 0.5em; text-align: center; }
+			.fl-arch { width: 100%; height: auto; display: block; margin: 0 auto 2em auto; max-width: 820px; }
+			.fl-case { border-left: 3px solid #18bfef; padding: 0.2em 0 0.2em 1.2em; margin: 0 0 2em 0; }
+			.fl-case h4 { margin-bottom: 0.4em; }
+			.fl-case p { margin-bottom: 0.4em; }
+			.fl-tag { font-size: 0.7em; letter-spacing: 0.1em; text-transform: uppercase; color: #888; }
+			.fl-note { background: #f4f4f4; padding: 1em 1.4em; font-size: 0.9em; }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Intro -->
+				<div id="intro">
+					<h1>FlowLayerPRO<br />
+					Case Study</h1>
+					<p style="text-align: center;">
+						REAL-TIME ORDER FLOW ANALYTICS FOR CRYPTO FUTURES
+					</p>
+					<ul class="actions">
+						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul>
+				</div>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">Data Projects</a></li>
+						<li class="active"><a href="flowlayerpro.html">FlowLayerPRO</a></li>
+						<li><a href="generic.html">Resume &amp; Courses</a></li>
+						<li><a href="elements.html">CNC CAD/CAM Design</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="mailto:MaguireDataAnalytics@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/Federico-Maguire/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/FedeMaguire" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+
+					<section class="post">
+						<header class="major">
+							<span class="date">September 2025 – Present</span>
+							<h2>FlowLayerPRO</h2>
+							<p>A Windows desktop app that streams live trades and order-book depth from Binance, Bybit, and OKX
+							and turns them into one readable chart: liquidity walls, large trades, iceberg orders, and buy/sell delta,
+							refreshed every 300 ms. I designed the product, directed its development with an AI coding assistant,
+							and tested every change before accepting it.</p>
+						</header>
+
+						<span class="image main"><img src="images/flowlayerpro/loading.jpg" alt="FlowLayerPRO loading screen with the app logo and tagline" /></span>
+
+						<figure class="fl-figure">
+							<span class="image main"><img src="images/flowlayerpro/dashboard.jpg" alt="FlowLayerPRO main chart: BTCUSDT candles with liquidity walls, large-trade markers, iceberg markers, and the delta/CVD panel" /></span>
+							<figcaption>Live BTCUSDT session: 1-minute candles over a liquidity heatmap, with large-trade and iceberg markers, and delta/CVD below.</figcaption>
+						</figure>
+
+						<!-- At a glance -->
+						<h3>At a glance</h3>
+						<ul>
+							<li><b>Data:</b> live WebSocket streams from 3 exchanges across 8 USDT perpetual markets, up to 2 pairs on screen at once.</li>
+							<li><b>Stack:</b> Python engine (pandas, NumPy, websocket-client, threading), Tauri desktop shell, Plotly.js WebGL charts.</li>
+							<li><b>Status:</b> production Windows build complete; currently in investor demos ahead of a closed beta.</li>
+							<li><b>Code:</b> private, since this is a commercial product. I'm happy to walk through it in an interview.</li>
+						</ul>
+
+						<hr />
+
+						<!-- What it shows -->
+						<h3>What the app shows</h3>
+						<p>Order books and large trades carry information that moves price, but in raw form they arrive as a constant
+						stream of WebSocket messages. The app processes them on the user's machine and draws four layers on one chart:</p>
+						<ul>
+							<li><b>Liquidity walls:</b> the order book is sampled at regular intervals, and the largest concentrations of resting orders are drawn as a heatmap behind the candles.</li>
+							<li><b>Large trades:</b> the biggest trades of the last 60 minutes, shown as markers sized by notional value, with an adjustable size threshold.</li>
+							<li><b>Iceberg orders:</b> price levels where executed volume exceeds the visible order size while the level keeps refreshing, a sign of a hidden order.</li>
+							<li><b>Delta and CVD:</b> buy volume minus sell volume per minute, plus its running total.</li>
+						</ul>
+
+						<div class="box alt">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6 col-12-small"><span class="image fit"><img src="images/flowlayerpro/big-trades.jpg" alt="Large-trade bubbles with the big trades settings panel open" /></span></div>
+								<div class="col-6 col-12-small"><span class="image fit"><img src="images/flowlayerpro/liquidity-settings.jpg" alt="Liquidity walls in blue with the liquidity settings panel open" /></span></div>
+								<div class="col-6 col-12-small"><span class="image fit"><img src="images/flowlayerpro/tooltip.jpg" alt="Hover tooltip showing price, quantity, and notional value of a liquidity level" /></span></div>
+								<div class="col-6 col-12-small"><span class="image fit"><img src="images/flowlayerpro/two-pairs.jpg" alt="Compact layout with BTC and ETH pairs open and the menu collapsed to icons" /></span></div>
+								<div class="col-12 col-12-small"><span class="image fit"><img src="images/flowlayerpro/pair-exchange.jpg" alt="Pair and exchange selection menus: eight USDT pairs and Binance, Bybit, OKX" /></span></div>
+							</div>
+						</div>
+
+						<hr />
+
+						<!-- Architecture -->
+						<h3>How it works</h3>
+						<p>A Python engine runs as a background process on the user's computer. It connects directly to each exchange,
+						aggregates the data in background threads, and every 300 ms sends a processed snapshot to the desktop shell,
+						which renders it with WebGL. A separate server handles only licensing and payments; it never touches market data.</p>
+
+						<svg class="fl-arch" viewBox="0 0 820 230" role="img" aria-labelledby="archTitle archDesc" xmlns="http://www.w3.org/2000/svg">
+							<title id="archTitle">FlowLayerPRO architecture</title>
+							<desc id="archDesc">Binance, Bybit and OKX WebSocket feeds go into a local Python engine, which sends JSON snapshots every 300 ms to a Tauri desktop shell that renders Plotly.js WebGL charts. A separate licensing and payments server connects only to the app.</desc>
+							<defs>
+								<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+									<path d="M0,0 L10,5 L0,10 z" fill="#585858" />
+								</marker>
+							</defs>
+							<g font-family="Source Sans Pro, Helvetica, sans-serif" font-size="14" fill="#212931">
+								<!-- exchanges -->
+								<rect x="10" y="20" width="140" height="40" rx="6" fill="#f4f4f4" stroke="#c9c9c9" />
+								<text x="80" y="45" text-anchor="middle">Binance</text>
+								<rect x="10" y="75" width="140" height="40" rx="6" fill="#f4f4f4" stroke="#c9c9c9" />
+								<text x="80" y="100" text-anchor="middle">Bybit</text>
+								<rect x="10" y="130" width="140" height="40" rx="6" fill="#f4f4f4" stroke="#c9c9c9" />
+								<text x="80" y="155" text-anchor="middle">OKX</text>
+								<!-- engine -->
+								<rect x="230" y="55" width="190" height="80" rx="8" fill="#e8f7fd" stroke="#18bfef" stroke-width="1.5" />
+								<text x="325" y="88" text-anchor="middle" font-weight="bold">Python engine</text>
+								<text x="325" y="110" text-anchor="middle" font-size="12" fill="#585858">threads · pandas · heaps</text>
+								<!-- shell -->
+								<rect x="500" y="55" width="140" height="80" rx="8" fill="#f4f4f4" stroke="#c9c9c9" />
+								<text x="570" y="88" text-anchor="middle" font-weight="bold">Tauri shell</text>
+								<text x="570" y="110" text-anchor="middle" font-size="12" fill="#585858">desktop app</text>
+								<!-- charts -->
+								<rect x="690" y="55" width="120" height="80" rx="8" fill="#f4f4f4" stroke="#c9c9c9" />
+								<text x="750" y="88" text-anchor="middle" font-weight="bold">Charts</text>
+								<text x="750" y="110" text-anchor="middle" font-size="12" fill="#585858">Plotly.js WebGL</text>
+								<!-- licensing -->
+								<rect x="500" y="175" width="140" height="40" rx="6" fill="#ffffff" stroke="#c9c9c9" stroke-dasharray="4 3" />
+								<text x="570" y="200" text-anchor="middle" font-size="12" fill="#585858">Licensing server</text>
+								<!-- arrows -->
+								<path d="M150,40 L228,80" stroke="#585858" fill="none" marker-end="url(#arr)" />
+								<path d="M150,95 L228,95" stroke="#585858" fill="none" marker-end="url(#arr)" />
+								<path d="M150,150 L228,110" stroke="#585858" fill="none" marker-end="url(#arr)" />
+								<text x="189" y="20" text-anchor="middle" font-size="11" fill="#585858">WebSockets</text>
+								<path d="M420,95 L498,95" stroke="#585858" fill="none" marker-end="url(#arr)" />
+								<text x="459" y="85" text-anchor="middle" font-size="11" fill="#585858">300 ms</text>
+								<path d="M640,95 L688,95" stroke="#585858" fill="none" marker-end="url(#arr)" />
+								<path d="M570,173 L570,137" stroke="#585858" fill="none" stroke-dasharray="4 3" marker-end="url(#arr)" />
+							</g>
+						</svg>
+
+						<hr />
+
+						<!-- AI review -->
+						<h3>Building with an AI coding assistant</h3>
+						<p>I supervised Claude as my coding assistant: it wrote the code drafts, and I reviewed, tested, and approved
+						each one, rejecting or correcting it whenever the evidence didn't hold up. I also made the product decisions and the final call on every design choice.
+						Over 40+ documented milestones, I worked under a fixed set of rules:</p>
+						<ul>
+							<li>Every claim needs log or command evidence. "It should work" is not evidence.</li>
+							<li>One change at a time: apply, recompile, test, confirm.</li>
+							<li>Test the packaged release build, never only the development build.</li>
+							<li>Verification commands must never print secrets, even redacted.</li>
+							<li>A second AI model reviews the architecture before major changes.</li>
+						</ul>
+						<p>These rules caught real mistakes. Three examples:</p>
+
+						<div class="fl-case">
+							<span class="fl-tag">Logical flaw in a design</span>
+							<h4>A trial system that couldn't work</h4>
+							<p>The assistant locked in a design that generated a new installation ID on every reinstall, combined with a
+							counter limiting each user to three free trials. I noticed the two couldn't both hold: with a fresh ID each time,
+							every reinstall would get a new trial and the counter would enforce nothing. I proposed storing the ID so it
+							survives reinstalls, and that became the final design.</p>
+						</div>
+
+						<div class="fl-case">
+							<span class="fl-tag">Wrong root-cause analysis</span>
+							<h4>Iceberg detection silently stopped working</h4>
+							<p>After a refactor, the app stopped saving iceberg detections. The assistant misdiagnosed the cause three times.
+							I kept pointing out that the evidence didn't fit its explanations, which led to the real cause: the packaging
+							tool loaded the engine twice, so the detector was writing to an empty copy of the data. The fix was to pass
+							the data store in explicitly.</p>
+						</div>
+
+						<div class="fl-case">
+							<span class="fl-tag">Race condition caught by testing</span>
+							<h4>History that never reloaded after going offline</h4>
+							<p>The assistant designed a retry loop that triggered only when the candle store was empty. It had even
+							considered and dismissed the risk. My cold-start offline test showed history never reloaded: a single live
+							candle arriving first made the store non-empty, so the retry never ran. The fix was an explicit flag.</p>
+						</div>
+
+						<hr />
+
+						<!-- Testing & results -->
+						<h3>Testing and results</h3>
+						<ul>
+							<li><b>Performance:</b> under two volatile pairs, processing cycles took up to 2.9 s. After redesigning large-trade tracking around a heap, a 4-hour New York session ran with zero slow cycles, and the refresh interval dropped from 500 ms to 300 ms.</li>
+							<li><b>Connection leak:</b> open sockets grew from 3 to 21 when switching pairs and never closed. I found it by counting sockets during testing; the fix was then verified on the packaged build.</li>
+							<li><b>Stress tests:</b> live-market runs of 2.5 h, 4 h, and 4 h 41 min across all three exchanges, plus offline and cold-start tests.</li>
+							<li><b>Code protection:</b> engine modules compiled to native binaries, confirmed with an A/B test to have no measurable performance cost.</li>
+						</ul>
+
+						<h3>Deployment</h3>
+						<p>I deployed and operated a self-hosted licensing and payment server: a hardened Ubuntu VPS running six Docker
+						Compose services, signed licenses verified offline, verified payment webhooks, and nightly encrypted backups with
+						a tested restore. GitHub Actions builds the Windows installer on every release tag.</p>
+
+						<h3>Timeline</h3>
+						<ul>
+							<li><b>Sep 2025:</b> first version as a Jupyter notebook engine with a Dash dashboard, growing out of my earlier <a href="index.html#binance-bot">Binance trading bot</a>.</li>
+							<li><b>Mar 2026:</b> rebuilt as a desktop app.</li>
+							<li><b>Apr 2026:</b> Bybit and OKX added; engine redesign; first three-exchange stress test.</li>
+							<li><b>Jun–Jul 2026:</b> automated build pipeline and production server.</li>
+							<li><b>Aug 2026:</b> fixes from an external architecture review.</li>
+							<li><b>Now:</b> investor demos ahead of a closed beta.</li>
+						</ul>
+
+						<p class="fl-note">The source code is private because FlowLayerPRO is a commercial product. I'm happy to walk through
+						the architecture, the code, and the review process in an interview.</p>
+
+						<ul class="actions special">
+							<li><a href="index.html" class="button">Back to Data Projects</a></li>
+						</ul>
+					</section>
+
+					<hr />
+
+					<!-- Contact -->
+					<section class="split contact">
+						<section class="alt">
+							<h3>Location</h3>
+							<p>Buenos Aires, Argentina</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<ul class="icons alt">
+								<li><a href="mailto:MaguireDataAnalytics@gmail.com"><span class="label">MaguireDataAnalytics@gmail.com</span></a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/Federico-Maguire/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/FedeMaguire" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+
+				</div>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Federico Maguire</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
